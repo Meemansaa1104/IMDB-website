@@ -1,0 +1,60 @@
+.header{
+    background-color: rgb(16, 1, 31);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    transition: all 1s ease;
+}
+
+.head{
+    color: white;
+    font-size: 33px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.wrap{
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.icon{
+    margin-right: 5px;
+    color: antiquewhite;
+}
+
+.detail{
+    font-size: 13px;
+    color: white;
+}
+
+.active{
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.activeColor{
+    color:rgb(16, 1, 31);
+    font-weight: 800;
+}
+

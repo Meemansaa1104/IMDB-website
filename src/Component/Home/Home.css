@@ -1,0 +1,70 @@
+.home{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.leftHome{
+    flex: 0.5;
+}
+
+.rightHome{
+    flex: 0.5;
+    position: relative;
+}
+
+.imageContainer>img{
+    height: 800px;
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.imageContainer{
+    width: 800px;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    font-size: 55px;
+    margin: 15px 0;
+    color: black;
+}
+
+h2{
+    font-size: 35px;
+    color: rgb(74, 2, 92);
+}
+
+h3{
+    font-size: 27px;
+    font-weight: 550;
+    color: black;
+}
+
+.bottomArrow{
+    position: absolute;
+    bottom: 280px;
+    width: 100px;
+    left: 18%;
+    animation-name: arrowBlink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrowBlink {
+   from{
+       bottom: 300px;
+       color: blueviolet;
+       font-size: 70px;
+    }
+}

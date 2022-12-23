@@ -1,0 +1,15 @@
+
+
+.portfolioList{
+    list-style-type: none;
+    font-size: 20px;
+    margin-right: 50px;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.new{
+    background-color: rgb(1, 1, 48);
+    color: white;
+}
