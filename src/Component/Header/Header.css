@@ -1,60 +1,78 @@
 .header{
-    background-color: rgb(16, 1, 31);
-    height: 80px;
+    background-color: black;
     width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 3;
-    transition: all 1s ease;
+    height: 70px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.head{
-    color: white;
-    font-size: 33px;
-    font-weight: 500;
-    text-decoration: none;
-    margin-right: 40px;
+.headerList{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.wrap{
-    padding: 20px 30px;
+.headerIcon{
+    align-items: center;
+    display: flex;
+    width: 70px;
+    height: 30px;
+    margin-right: 20px;
+    justify-content: space-evenly;
+}
+
+.menuBar{
+    align-items: center;
+    display: flex;
+    margin-right: 10px;
+    justify-content: space-evenly;
+}
+
+.menuBar>span{
+    font-size: 16px;
+    padding: 3px;
+}
+
+.space_Line{
+    color: rgb(47, 48, 47);
+}
+
+.SearchBar{
+    color: gray ;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.left{
-    display: flex;
-    align-items: center;
-}
-
-.item{
-    display: flex;
-    align-items: center;
-    margin-left: 30px;
-}
-
-.icon{
-    margin-right: 5px;
-    color: antiquewhite;
-}
-
-.detail{
-    font-size: 13px;
-    color: white;
-}
-
-.active{
+    justify-content: space-evenly;
     background-color: white;
-    height: 80px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 3;
+    border-radius: 4px;
+    padding-right: 6px;
+    margin-right: 30px;
+    font-size: 30px;
 }
 
-.activeColor{
-    color:rgb(16, 1, 31);
-    font-weight: 800;
+
+.proIcon{
+    align-items: center;
+    display: flex;
+    width: 70px;
+    height: 25px;
+    justify-content: center;
+}
+
+.watch_list{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 15px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.sign_in{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 15px;
+    cursor: pointer;
 }
 

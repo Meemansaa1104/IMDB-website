@@ -1,26 +1,31 @@
-import React, { useState } from 'react';
-import Contact from './Component/contact/Contact';
-import Header from './Component/Header/Header';
-import Home from './Component/Home/Home';
-import Portfolio from './Component/Portfolio/Portfolio';
-import Testimonials from './Component/Testimonials/Testimonials';
-import Work from './Component/Work/Work';
+import React from 'react';
+
 import './App.css';
-import Menu from './Component/Menu/Menu';
+
+import Header from './Component/Header/Header';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Home from './Component/Home/Home';
+
+import Movies from './Component/Movies/Movies';
+
+import MovieDetail from './Component/MovieDetail/MovieDetail';
+
 
 const App = () => {
-  const [menuOpen, setMenuOpen] = useState(false)
   return (
     <div className='app'>
-      < Header menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      < Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <div className='sections'  >
-        < Home />
-        < Portfolio />
-        < Work />
-        < Testimonials />
-        < Contact />
-      </div>
+      <Router>
+      < Header />
+        <Routes>
+          <Route index element = { <Home/> }></Route>
+          <Route path = 'movie/:id' element={ < MovieDetail /> }></Route>
+          <Route path = 'movies/:type' element={ < Movies /> }></Route>
+          <Route path = '/*' element={<h1>Error</h1>}></Route>
+        </Routes>
+      </Router>
+      
     </div>
   )
 }
